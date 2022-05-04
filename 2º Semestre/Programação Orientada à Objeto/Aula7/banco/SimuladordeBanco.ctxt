@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=SimuladordeBanco
+comment1.params=n
+comment1.target=SimuladordeBanco(int)
+comment2.params=
+comment2.target=void\ proximoAtendimento()
+numComments=3

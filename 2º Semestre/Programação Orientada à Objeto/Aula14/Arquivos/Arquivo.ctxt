@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Arquivo
+comment1.params=arquivo\ conteudo\ adicionar
+comment1.target=void\ salvar(java.lang.String,\ java.lang.String,\ boolean)
+comment2.params=arquivo
+comment2.target=java.lang.String\ carregar(java.lang.String)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

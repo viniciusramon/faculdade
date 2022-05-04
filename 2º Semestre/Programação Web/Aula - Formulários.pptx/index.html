@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vinicius Ramon Reis">
+    <meta name="description" content="Introdução ao Formulario">
+    <meta name="keywords" content="Formulario, aula, web">
+    <title>Introdução Formulário</title>
+    <style>
+        body{
+            background-color: orange;
+            background-image: url("https://lh3.googleusercontent.com/proxy/rg1oIX4SINr5sM6nqMMs2Sp3rjDZNCSu3vx_MCf7VuZdNgOQVrDZt2jfBUuMza9vcCR5_Uj-OwNiaKyK1Rxh1ukTFLC0wlyJaoeAWdHvoDm8jjdh8eDrxpam8mi_Ywp-upBJAb-gm9X66b-Vqz0k5g");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        input{
+            border-radius: 10px;
+            border-color: whitesmoke;
+        } 
+
+        #botao{
+            text-align: left;
+            border-radius: 6px;
+            margin: 10px 10px 10px 150px;
+            color: black;
+            font-size: 18px;    
+        }
+
+      
+
+        output{
+            border-radius: 10px;
+            border-color: whitesmoke;
+            color: whitesmoke;
+        } 
+
+        label{
+            display: inline-block;
+            width: 120px;
+            text-align: right;
+            line-height: 2;
+            color: whitesmoke;
+        }
+
+        h1{
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="index.html" method="post">
+        <label for="address">Endereço:</label>
+        <input type="text" name="address" placeholder="Rua Antônio Nunes, 69" id="address"><br>
+
+        <label for="city">Cidade:</label>
+        <input type="text" name="city" placeholder="Limeira/SP" id="city"><br>
+
+        <label for="age">Idade:</label>
+        <input type="number" name="age" placeholder="27" id="age" min="0" max="200" step="1"><br>
+
+        <label for="qtde">Quantidade:</label>
+        <input type="range" name="qtde" id="qtde" 
+               min="0" max="100" value="50" step="0.5"
+               oninput="valor_qtde.value = qtde.value">
+        <output name="valor_qtde" id="valor_qtde">50</output> <br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="user@hotmail.com" id="email"><br>
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" name="phone" placeholder="+55(19)99406-3541" id="phone"><br>
+
+        <label for="website">Site:</label>
+        <input type="url" name="website" placeholder="www.something.com.br" id="website"><br>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" placeholder="999.999.999-99" id="cpf"><br>
+
+        <div id="botao">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+        
+    </form>
+</body>
+</html>

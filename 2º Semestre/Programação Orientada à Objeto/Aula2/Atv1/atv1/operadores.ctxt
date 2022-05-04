@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=operadores
+comment0.text=\r\nAula\ 2\ -\ Ex\ 1.\ Fa\u00E7a\ um\ programa\ que\ mostre\ todas\ as\ opera\u00E7\u00F5es\r\nposs\u00EDveis\ com\ dois\ n\u00FAmeros\ lidos\ dos\ par\u00E2metros\ de\ linha\ de\r\ncomandos.\ Veja\ os\ erros\ que\ acontecem\ caso\ voc\u00EA\ n\u00E3o\ passe\ os\r\npar\u00E2metros\ ou\ caso\ os\ par\u00E2metros\ n\u00E3o\ sejam\ n\u00FAmeros;\r\n\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

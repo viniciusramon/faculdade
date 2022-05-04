@@ -1,0 +1,55 @@
+#include &lt;stdio.h&gt;
+int main()
+{
+	int v1[ ]={1,2,3,4}, v2[ ]={4,4,5,6};
+	int uniao[8];
+	int i, j, k, m;
+	int n=0;
+	/*analisa o primeiro vetor*/
+ for(i=0; i&lt;4; i++)
+	{
+		for(j=0; j&lt;4; j++)
+		{
+			if(v1[i]!=v2[j])
+			{
+			 for(k=0;k&lt;n;k++)
+ {
+ if(v1[i]==uniao[k])
+ break;
+ }
+ if(k==n)
+ {
+ uniao[n]=v1[i];
+ n++;
+ }
+ 
+ }
+		}
+ }
+ /*analisa o segundo vetor, descartando repetições dentro do uniao[]*/
+ for(i=0; i&lt;4; i++)
+ {
+ for(j=0; j&lt;4; j++)
+ {
+ if(v1[i]!=v2[j])
+ {
+ for(k=0;k&lt;n;k++)
+ {
+ if(v2[j]==uniao[k])
+ break;
+ }
+ if(k==n)
+ {
+ uniao[n]=v2[j];
+ n++;
+ }
+ 
+ }
+ }
+ }
+	printf(&quot;Seus elementos da uniao sao:\n&quot;);
+	for(m=0;m&lt;n;m++)
+ {
+ printf(&quot;%i\n&quot;, uniao[m]);
+ }
+return 0;

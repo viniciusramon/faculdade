@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Agenda
+comment1.params=arquivo\ conteudo\ adicionar
+comment1.target=void\ salvar(java.lang.String,\ java.lang.String,\ boolean)
+comment2.params=arquivo
+comment2.target=java.lang.String\ carregar(java.lang.String)
+comment3.params=arquivo\ pesquisa
+comment3.target=boolean\ pesquisar(java.lang.String,\ java.lang.String)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

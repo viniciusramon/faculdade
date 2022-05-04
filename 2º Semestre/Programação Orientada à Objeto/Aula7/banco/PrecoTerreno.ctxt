@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=PrecoTerreno
+comment1.params=argumentos
+comment1.target=void\ main(java.lang.String[])
+comment2.params=area\ local
+comment2.target=double\ PrecoDoTerreno(double,\ int)
+numComments=3

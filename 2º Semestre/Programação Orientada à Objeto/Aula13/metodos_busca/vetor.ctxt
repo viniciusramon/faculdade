@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=vetor
+comment1.params=arg
+comment1.target=void\ main(java.lang.String[])
+comment2.params=n
+comment2.target=int\ pesquisa(int)
+numComments=3

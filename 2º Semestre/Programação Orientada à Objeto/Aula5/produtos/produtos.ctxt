@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=produtos
+comment1.params=p
+comment1.target=void\ seta_preco(double)
+comment2.params=
+comment2.target=double\ retorna_preco()
+numComments=3

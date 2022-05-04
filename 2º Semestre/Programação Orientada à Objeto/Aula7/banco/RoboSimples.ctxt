@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=RoboSimples
+comment1.params=n\ px\ py\ d
+comment1.target=RoboSimples(java.lang.String,\ int,\ int,\ char)
+comment2.params=n
+comment2.target=RoboSimples(java.lang.String)
+comment3.params=
+comment3.target=RoboSimples()
+comment4.params=
+comment4.target=void\ move()
+comment5.params=passos
+comment5.target=void\ move(int)
+comment6.params=novaDirecao
+comment6.target=void\ mudaDirecao(char)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

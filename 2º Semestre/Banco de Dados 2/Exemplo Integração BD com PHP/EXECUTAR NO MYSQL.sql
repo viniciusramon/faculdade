@@ -1,0 +1,7 @@
+CREATE DATABASE DBExterno;
+USE DBExterno;
+
+CREATE TABLE cadastro(
+   id    INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+   nome  VARCHAR(50),
+   idade INT);

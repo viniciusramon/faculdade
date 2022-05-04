@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=vetor_binaria
+comment1.params=arg
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ ordena()
+comment3.params=n
+comment3.target=int\ pesquisa(int)
+numComments=4

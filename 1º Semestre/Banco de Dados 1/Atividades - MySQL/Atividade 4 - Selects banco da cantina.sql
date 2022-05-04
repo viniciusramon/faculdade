@@ -1,0 +1,2 @@
+select fornecedor.nome_fornecedor as nome, compras.dt_compra as dia from fornecedor,compras where fornecedor.id_fornecedor = compras.id_fornecedor and fornecedor.id_fornecedor = 2 order by dia;
+select produtos.qtde_estoque as qtde_minima, produtos.descricao as nome from produtos where produtos.qtde_estoque < 20;

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=pessoas
+comment1.params=n
+comment1.target=java.lang.String\ set_name(java.lang.String)
+comment2.params=y
+comment2.target=int\ set_age(int)
+comment3.params=w
+comment3.target=float\ set_weight(float)
+comment4.params=h
+comment4.target=float\ set_high(float)
+numComments=5

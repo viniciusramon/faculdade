@@ -1,0 +1,77 @@
+body{
+	font-family: Helvetica, sans-serif;
+	background-color: rgba(243, 181, 10, 0.712);
+}
+#nomeSite{
+	font-family: Helvetica, sans-serif;
+	font-size: 20pt;
+	color: green;
+	text-align: center;
+
+}
+#wrap{
+	width: 960px;
+	margin: auto;
+	background: #e3e3e3;
+	padding: 10px 20px; /* O padding trabalha com 4 parâmetros: cima, direita, baixo, esquerda */
+	overflow: hidden; 
+}
+
+header nav ul{
+	list-style: none; /* para retirar as marcadores de ul e li */
+	padding-left: 0px;
+
+}
+
+header nav ul li{
+	display: inline-block; /* mantém os ítens do menu em linha */
+	margin-right: 10px;
+}
+
+/* realizar a mudança do menu para cor laranja*/
+header nav ul li a{
+	font-size: 18px;
+	color:	#ff6600;
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: green;
+}
+/* ao passar o mouse sobre o item de menu ele ficará decorado com underline */
+header nav ul li a:hover{
+	text-decoration: underline;
+}
+
+/* float faz o conteúdo da página "flutuar" a esquerda ou direita*/
+#content{
+	float: left;
+	width: 660px;
+	background: red; 
+}
+
+#sidebar{
+	float: right;
+	width: 300px;
+	background: blue; 
+}
+
+#sidebar ul{
+	list-style: none; /* para retirar as marcadores de ul*/
+}
+
+#sidebar ul li a{
+	color:	#ff6600;
+	text-decoration: none;
+}
+
+#sidebar ul li a:hover{
+	text-decoration: underline;
+}
+footer{
+	clear: both; /* usado para limpar as flutuações anteriores */
+}
+#center{
+	display: block;
+	margin: 0 auto;
+	max-height: 250px;
+}

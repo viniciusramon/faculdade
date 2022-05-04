@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=numero_par_ou_impar_IF
+comment0.text=\r\nAula\ 2\ -\ Ex\ 2.Fa\u00E7a\ dois\ programas\ que\ retornem\ se\ o\ n\u00FAmero\ lido\ do\ par\u00E2metro\r\nde\ linha\ de\ comandos\ \u00E9\ par\ ou\ \u00EDmpar\:\r\n\r\na.\ Usando\ a\ estrutura\ IF;\r\n\r\nb.\ Usando\ a\ estrutura\ SWITCH;\r\n\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
