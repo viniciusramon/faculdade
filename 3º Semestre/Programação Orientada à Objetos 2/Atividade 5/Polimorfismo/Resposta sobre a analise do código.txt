@@ -1,0 +1,7 @@
+primeiro foi criada uma classe pai chamada funcionario e ela recebe os dados(argumentos) nome e salario e realiza um calculo do ganho anual e exibe o nome do funcionario e o valor do salario.
+
+já a classe tecnico, ela herda os metodos da classe pai funcionario e adiciona um bonus que será adicionado ao calculo do ganho anual.
+
+já a classe testeFuncionario será criado dois objetos, um objeto tecnico e outro objeto funcionario, no objeto tecnico ele receberá o nome e o salario dele e exibirá o nome e o salario com bonus, já o objeto funcionario recebrá apenas o salario dele e retornara o calculo sem o bonus.
+
+OBS: O código apresenta alguns erros, como falta do setSalario na classe funcionario entre outros, fiz algumas alterações para tentar rodar o código porém nao sei se está certo.
