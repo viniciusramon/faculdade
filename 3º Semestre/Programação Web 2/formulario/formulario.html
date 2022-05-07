@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro Social</h1>
+        </header>
+
+        <form action="cadastro.php" method="post">
+
+            <p>Preencha seus dados pessoais</p>
+            <p>
+                Nome: <input type="text" name="username" placeholder="Digite seu nome aqui...." />
+            </p>
+
+            <p>
+                CPF: <input type="text" name="cpf" placeholder="000.000.000-00">
+                Data de Nascimento <input type="date" name="nascimento">
+                Sexo <input type="radio" name="sexo" value="masculino"> Masculino
+                <input type="radio" name="sexo" value="feminino">Feminino
+            </p>
+
+            <p>
+                Estado Civil
+                <select name="estadoCivil" id="estadoCivil">
+                    <option value="casado"> Casado(a)</option>
+                    <option value="solteiro"> Solteiro(a)</option>
+                    <option value="noivado"> Noivo(a)</option>
+                    <option value="viuvo"> Viuvo(a)</option>
+                    <option value="unidaoEstavel"> União Estável</option>
+                    <option value="divorcio"> Divorciado(a)</option>
+                </select>
+                Renda Mensal
+                <input type="number" name="renda" placeholder="0.00">
+            </p>
+
+            <p>
+                Endereço
+                Lagradouro <input type="text" name="endereco" placeholder="Rua das violetas azuis">
+                Número<input type="number" name="numero" placeholder="Nº"> 
+                Complemento<input type="text" name="complemento" placeholder="bloco 3, 5º andar"> 
+            </p>
+            <p>
+                Estado
+                <select name="estado" id="estado">
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM"> AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES"> ES</option>
+                    <option value="GO"> GO</option>
+                    <option value="MA"> MA</option>
+                    <option value="MT"> MT</option>
+                    <option value="MS"> MS</option>
+                    <option value="MG"> MG</option>
+                    <option value="PA"> PA</option>
+                    <option value="PB"> PB</option>
+                    <option value="PR"> PR</option>
+                    <option value="PE"> PE</option>
+                    <option value="PI"> PI</option>
+                    <option value="RJ"> RJ</option>
+                    <option value="RN"> RN</option>
+                    <option value="RS"> RS</option>
+                    <option value="RO"> RO</option>
+                    <option value="RR"> RR</option>
+                    <option value="SC"> SC</option>
+                    <option value="SP"> SP</option>
+                    <option value="SE"> SE</option>
+                    <option value="TO"> TO</option>
+                </select>
+                Cidade <input type="text" name="cidade" placeholder="Digite aqui o nome de sua cidade...">
+            </p>
+            <p>
+                <input type="submit" value="Cadastrar!" />
+            </p>
+        </form>
+
+        <footer>
+            <p> cadastro desenvolvido por Vinicius Ramon</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
