@@ -15,80 +15,97 @@
             <h1>Cadastro Social</h1>
         </header>
 
-        <form action="cadastro.php" method="post">
+        <div>
+            <form action="cadastro.php" method="post">
+                <fieldset class="grupo"><!-- agrupamento de campos-->
+                
+                    <h2>Preencha seus dados pessoais</h2>
 
-            <p>Preencha seus dados pessoais</p>
-            <p>
-                Nome: <input type="text" name="username" placeholder="Digite seu nome aqui...." />
-            </p>
+                    <div class="campo">
+                        <label for="nome"><strong>Nome</strong> <input type="text" name="nome" required id="nome"
+                            placeholder="Digite seu nome aqui...." /></label>
+                    </div>
+                </fieldset>
 
-            <p>
-                CPF: <input type="text" name="cpf" placeholder="000.000.000-00">
-                Data de Nascimento <input type="date" name="nascimento">
-                Sexo <input type="radio" name="sexo" value="masculino"> Masculino
-                <input type="radio" name="sexo" value="feminino">Feminino
-            </p>
+                <div class="campo">
+                    <label for="cpf"><strong>CPF</strong> <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00"></label>
+                    <label for="nascimento"><strong>Data de Nascimento</strong> <input type="date" id="nascimento" name="nascimento"></label>
+                    <label for="sexo"><strong>Sexo</strong></label>
+                    <label for="masculino"><input type="radio" name="sexo" id="masculino" value="masculino" checked>Masculino</label>
+                   <label for="feminino"><input type="radio" name="sexo" id="feminino"  value="feminino">Feminino</label>
+                </div>
 
-            <p>
-                Estado Civil
-                <select name="estadoCivil" id="estadoCivil">
-                    <option value="casado"> Casado(a)</option>
-                    <option value="solteiro"> Solteiro(a)</option>
-                    <option value="noivado"> Noivo(a)</option>
-                    <option value="viuvo"> Viuvo(a)</option>
-                    <option value="unidaoEstavel"> União Estável</option>
-                    <option value="divorcio"> Divorciado(a)</option>
-                </select>
-                Renda Mensal
-                <input type="number" name="renda" placeholder="0.00">
-            </p>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="estadoCivil"><strong>Estado Civil</strong>
+                        <select name="estadoCivil" id="estadoCivil">
+                            <option selected disabled value="">Selecione o seu estado civil...</option>
+                            <option value="casado"> Casado(a)</option>
+                            <option value="solteiro"> Solteiro(a)</option>
+                            <option value="noivado"> Noivo(a)</option>
+                            <option value="viuvo"> Viuvo(a)</option>
+                            <option value="unidaoEstavel"> União Estável</option>
+                            <option value="divorcio"> Divorciado(a)</option>
+                        </select></label>
+                        <label for="renda"><strong>Renda Mensal</strong>
+                        <input type="number" name="renda" placeholder="0.00"></label>
+                    </div>
+                </fieldset>
 
-            <p>
-                Endereço
-                Lagradouro <input type="text" name="endereco" placeholder="Rua das violetas azuis">
-                Número<input type="number" name="numero" placeholder="Nº"> 
-                Complemento<input type="text" name="complemento" placeholder="bloco 3, 5º andar"> 
-            </p>
-            <p>
-                Estado
-                <select name="estado" id="estado">
-                    <option value="AC">AC</option>
-                    <option value="AL">AL</option>
-                    <option value="AP">AP</option>
-                    <option value="AM"> AM</option>
-                    <option value="BA">BA</option>
-                    <option value="CE">CE</option>
-                    <option value="DF">DF</option>
-                    <option value="ES"> ES</option>
-                    <option value="GO"> GO</option>
-                    <option value="MA"> MA</option>
-                    <option value="MT"> MT</option>
-                    <option value="MS"> MS</option>
-                    <option value="MG"> MG</option>
-                    <option value="PA"> PA</option>
-                    <option value="PB"> PB</option>
-                    <option value="PR"> PR</option>
-                    <option value="PE"> PE</option>
-                    <option value="PI"> PI</option>
-                    <option value="RJ"> RJ</option>
-                    <option value="RN"> RN</option>
-                    <option value="RS"> RS</option>
-                    <option value="RO"> RO</option>
-                    <option value="RR"> RR</option>
-                    <option value="SC"> SC</option>
-                    <option value="SP"> SP</option>
-                    <option value="SE"> SE</option>
-                    <option value="TO"> TO</option>
-                </select>
-                Cidade <input type="text" name="cidade" placeholder="Digite aqui o nome de sua cidade...">
-            </p>
-            <p>
-                <input type="submit" value="Cadastrar!" />
-            </p>
-        </form>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <h2>Endereço</h2>
+                        <label for="endereco"><strong>Lagradouro</strong></label> 
+                        <input type="text" id="endereco" name="endereco"
+                            placeholder="Rua das violetas azuis">
+                        <label for="numero"><strong>Número</strong></label>
+                        <input type="number" id="numero" name="numero" placeholder="Nº">
+                        <label for="complemento"><strong>Complemento</strong></label>
+                        <input type="text" id="complemento" name="complemento"
+                            placeholder="bloco 3, 5º andar">
+                        <label for="estado"><strong>Estado</strong></label>
+                        <select name="estado" id="estado">
+                            <option selected disabled value="">Selecione o seu estado...</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+                        <label for="cidade"><strong>Cidade</strong></label> <input type="text" id="cidade" name="cidade"
+                            placeholder="Digite aqui o nome de sua cidade...">
+                    </div>
+                </fieldset>
+
+                <button class="botao" type="submit">Cadastrar!</button>
+
+            </form>
+        </div>
 
         <footer>
-            <p> cadastro desenvolvido por Vinicius Ramon</p>
+            <h3> cadastro desenvolvido por Vinicius Ramon</h3>
         </footer>
 
     </div>
