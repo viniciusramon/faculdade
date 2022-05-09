@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+    html, body{
+        min-height: 100vh;
+        background-color: darkgray;
+}
+
+header{
+    background-color: green;
+}
+
+section{
+    background-color: blue;
+            border: 5px solid black;
+            width: 10vw;
+            height: 80vh;
+            padding-left: 10px;
+            margin-left: 5px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+}
+
+aside{
+    background-color: yellow;
+    display: contents;
+            border: 5px solid black;
+            width: 50vw;
+            height: 60vh;
+            position: top right;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
