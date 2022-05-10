@@ -1,41 +1,73 @@
 @charset "UTF-8";
+/* Formatação da página para aceitar qualquer tipo de idioma */
 
-*{
+/* Configuração de todos os elementos da página*/
+* {
     margin: 0px;
     padding: 0px;
-}
-    html, body{
-        min-height: 100vh;
-        background-color: darkgray;
-}
-
-header{
-    background-color: green;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-section{
-    background-color: blue;
-            border: 5px solid black;
-            width: 10vw;
-            height: 80vh;
-            padding-left: 10px;
-            margin-left: 5px;
-            margin-top: 15px;
-            margin-bottom: 5px;
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-aside{
-    background-color: yellow;
-    display: contents;
-            border: 5px solid black;
-            width: 50vw;
-            height: 60vh;
-            position: top right;
+/*Conatiner do corpo do site*/
+.container {
+    display: grid;
+    /*Modo de exibição*/
+    grid-template: 5vh 90vh 5vh / 1fr 4fr;
+    /*Divide a tela em 3 Linhas, onde a primeira linha ocupará 10% da tela (topo), a parte do meio ocupará 90% da tela (corpo) e a ultima linha ocupará 20% da tela (rodapé), isso serve para manter alinhada as partes. E depois fraciona ela em 5 colunas onde 1 coluna será ocupada por 1 parte e a segunda parte será ocupada por 4 colunas*/
+    grid-template-areas: "h h" "s a" "f f";
+    /*Cria as variaveis h(Header), s(Section), a(Aside) e f(Footer), onde o Header ocupará duas partes na parte superior, uma parte no meio será reservada para a section e a outra parte do meio será reservada para o aside, e o footer ocupara as duas partes da parte inferior*/
 }
 
-footer{
-    background-color: black;
+/*Cabeçalho do site*/
+header {
+    grid-area: h;
+    /*Utiliza a variavel h(header) configurada no grid do container*/
+    border: 3px solid black;  
+    background: #0082e6;
+}
+
+/*Logo da página*/
+label.logo{
     color: white;
-    text-align: center;
-    padding: 10px;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+
+/*section do site, provavelmente a area de navegação entre os menus*/
+section {
+    grid-area: s;
+    /*Utiliza a variavel s(section) configurada no grid do container*/
+    border: 3px solid black;
+    background: #0082e6;
+    height: auto;
+    width: 100%;
+}
+
+/*Aside do site, area onde o conteudo será exibido*/
+aside {
+    grid-area: a;
+    /*Utiliza a variavel a(aside) configurada no grid do container*/
+    border: 3px solid black;
+    display: grid;
+    align-items: stretch;
+    justify-items: left;
+    margin-left: 50px;
+}
+
+/*Footer do site,*/
+footer {
+    grid-area: f;
+    /*Utiliza a variavel f(footer) configurada no grid do container*/
+    border: 3px solid black;
 }

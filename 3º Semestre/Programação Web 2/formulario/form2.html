@@ -23,8 +23,8 @@
                 <label for="nascimento"><strong>Data de Nascimento</strong></label>
                 <input type="date" id="nascimento" name="nascimento">
                 <label for="sexo"><strong>Sexo</strong></label>
-                Masculino<input type="radio" name="sexo" id="masculino" value="masculino" checked>
-                Feminino <input type="radio" name="sexo" id="feminino" value="feminino">
+                Masculino<input type="radio" name="sexo" id="sexo" value="masculino" checked>
+                Feminino <input type="radio" name="sexo" id="sexo" value="feminino">
                 <label for="estadoCivil"><strong>Estado Civil</strong></label>
                 <select name="estadoCivil" id="estadoCivil">
                     <option selected disabled value="">Selecione o seu estado civil...</option>
@@ -80,13 +80,12 @@
                 <label for="cidade"><strong>Cidade</strong></label>
                 <input type="text"  id="cidade" size="60" name="cidade" placeholder="Digite aqui o nome de sua cidade...">
                 <label for="cep"><strong>CEP</strong></label>
-                <input type="text" placeholder="00000-000">
+                <input type="text" name="cep" placeholder="00000-000">
                 <label for="bairro"><strong>Bairro</strong></label>
-                <input type="text" size="60" placeholder="Bairro">
+                <input type="text" size="60" name="bairro" placeholder="Bairro">
             </fieldset>
 
             <input type="submit" value="Cadastrar"> &nbsp; &nbsp;
-            <input  type="button" value="Voltar">
         </form>
 
         
