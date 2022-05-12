@@ -19,6 +19,12 @@ body{
     height: 100%;
     width: 240px;
     background: #0A2558;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active{ /* JavaScript CSS*/
+    width: 60px; /* Por causa que o tamanho minimo do .sidebar .nav-links li a i{} é de 60px */
+
 }
 
 .sidebar .logo-details{
@@ -55,7 +61,7 @@ body{
 }
 
 .sidebar .nav-links li a{
-    background: red;
+   background: red;
    height: 100%;
    width: 100%;
    display: flex;
@@ -82,6 +88,7 @@ body{
     color: #fff;
     font-size: 15px;
     font-weight: 400;
+    white-space: nowrap; /* Faz com que os nomes dos links da sidebar não fiquem um em cima do outro quando ela encolher depois de clicar no botão do menu*/
 
 }
 
@@ -93,15 +100,31 @@ body{
     min-height: 100vh;
     width: calc(100% - 240px);
     left: 240px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .home-section{ /*Faz com que não tenha um espaço em branco quando a side bar encolher*/
+    width: calc(100% - 60px);
+    left: 60px;
 }
 
 .home-section nav{
+    position: fixed;
+    width: calc(100% - 240px);
+    left: 240px;
     height: 80px;
     background: #fff;
     padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.5s ease;
+
+}
+
+.sidebar.active ~ .home-section nav{
+    width: calc(100% - 60px);
+    left: 60px;
 }
 
 .home-section nav .sidebar-button{
@@ -128,5 +151,183 @@ nav .search-box input{
     position: absolute;
     height: 100%;
     width: 100%;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 17px;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    outline: none;
+}
 
+nav .search-box .bx-search{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 40px;
+    background: #2697ff;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.home-section nav .profile-details{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    min-width: 190px;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    padding: 0 15px 0 2px;
+}
+
+nav .profile-details img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 6px;
+
+}
+
+nav .profile-details .admin_name{
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+nav .profile-details i{
+    color: #333;
+    font-size: 25px;
+
+}
+
+/* Home-Content*/
+.home-section .home-content{
+    position: relative;
+    padding-top: 100px;
+
+}
+
+.home-content .overview-boxes{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.home-content .overview-boxes .box{
+    width: calc(100% / 4 - 15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 15px 14px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1) ;
+}
+
+.home-content .overview-boxes .box_topic{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home-content .overview-boxes .number{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: -5px;
+    display: inline-block;
+}
+
+.overview-boxes .indicator{
+    display: flex;
+    align-items: center;
+
+}
+
+.overview-boxes .indicator i{
+    height: 20px;
+    width: 20px;
+    background: #8fdacb;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.overview-boxes .indicator i.down{
+    background: #e87d88;
+}
+
+.overview-boxes .indicator .text{
+    font-size: 12px;
+}
+
+.overview-boxes .box .cart{
+    font-size: 32px;
+    font-weight: 500;
+    height: 50px;
+    width: 50px;
+    background: #cce5ff;
+    color: #66b0ff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.overview-boxes .box .cart.two{
+    background: #c0f2d8;
+    color: #2bd47d;
+}
+
+.overview-boxes .box .cart.three{
+    color: #ffc233;
+    background: #ffe8b3;
+}
+
+.overview-boxes .box .cart.four{
+    color: #e05260;
+    background: #f7d4d7;
+}
+
+@media (max-width: 1216px){ /*original na video aula é max-width: 1216*/
+    .sidebar{
+        width: 60px;
+    }
+
+    .sidebar.active{
+        width: 220px;
+    }
+
+    .home-section{
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+
+    .sidebar.active ~ .home-section{
+        width: calc(100% - 220px);
+        left: 220px;
+    }
+
+    .home-section nav{
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+
+    .sidebar.active ~ .home-section nav{
+        width: calc(100% - 220px);
+        left: 22px;
+    }
+}
+
+@media (max-width: 1018px){
+    .home-content .overview-boxes .box{
+        width: calc(100% / 2 - 15px);
+    }
 }
