@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar{
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  background: orange;
+}
+
+.sidebar .nav-links{
+  margin-top: 50px;
+  padding-left: 20px;
+}
+
+.sidebar .nav-links li{
+  position: relative;
+  list-style: none;
+  height: 50px;
+
+}
+
+.sidebar .nav-links li a{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+
+}
+
+.sidebar .nav-links li a .links_name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+.sidebar .nav-links .log_out{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.profile-details {
+  height: 200px;
+  width: 200px;
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.profile-details img {
+  max-height: 200px;
+  max-width: 200px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.profile-details .admin-name{
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 auto;
+  display: block; 
+}
