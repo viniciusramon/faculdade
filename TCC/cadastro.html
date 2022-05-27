@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="cadastro.css">
+
+
+    <!--BoxIcons CDN Link-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bxs-dog'></i>
+            <span class="logo_name">4Service</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#" class="active">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-box'></i>
+                    <span class="links_name">Product</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-list-ul'></i>
+                    <span class="links_name">Order List</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-coin-stack'></i> <span class="links_name">Stock</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-book-alt'></i>
+                    <span class="links_name">Total Order</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Team</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message'></i>
+                    <span class="links_name">Messages</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart'></i>
+                    <span class="links_name">Favorities</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links_name">Settings</span>
+                </a>
+            </li>
+            <li class="log_out">
+                <a href="#">
+                    <i class='bx bx-log-out'></i>
+                    <span class="links_name">Log out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Home-Content-->
+    <section class="home-section">
+        <nav>
+            <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">Dashboard</span>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div>
+            <div class="profile-details">
+                <img src="foto.jpeg" alt="photo">
+                <span class="admin_name">Vinicius Ramon</span>
+                <i class='bx bxs-chevron-down'></i>
+            </div>
+        </nav>
+
+        <!-- Home-content -->
+        <div class="home-content">
+
+            <div class="cadastro">
+
+                <!-- Cadastro-Content Top -->
+                <div class="cadastrar-clientes box">
+                    <div class="title">Cadastrar Clientes</div>
+
+                    <li class="topic">Dados Cliente</li>
+
+                    <label class="cliente" for="nome">Nome</label>
+                            <input type="text">
+
+                    <ul class="cadastrar-clientes-details">
+                        <li class="topic">Dados Cliente</li>
+                        <li>
+                            <label class="cliente" for="nome">Nome</label>
+                            <input type="text">
+                        </li>
+
+                        <li>
+                            <label class="cliente" for="cnpj">CNPJ</label>
+                            <input type="text">
+                        </li>
+
+                        <li class="topic">Endereço</li>
+
+                        <li>
+                            <label class="cliente" for="logradouro">Logradouro</label>
+                            <input type="text">
+                        </li>
+
+                        <li>
+                            <label class="cliente" for="numero">Nº</label>
+                            <input type="text">
+                        </li>
+
+                        <li>
+                            <label class="cliente" for="bairro">Bairro</label>
+                            <input type="text">
+                        </li>
+
+                        <li>
+                            <label class="cliente" for="cidade">Cidade</label>
+                            <input type="text">
+                        </li>
+
+                        <li>
+                            <label class="cliente" for="estado">Estado</label>
+                            <input type="text">
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cadastro-Content Bottom -->
+                <div class="cadastro-recente box">
+                    <div class="title">Clientes Cadastrados Recentemente</div>
+                    <div class="cadastro-details">
+                        <ul class="details">
+                            <li class="topic">Data</li>
+                            <li><a href="#">15 May 2022</a></li>
+                            <li><a href="#">15 May 2022</a></li>
+                            <li><a href="#">15 May 2022</a></li>
+                            <li><a href="#">15 May 2022</a></li>
+                            <li><a href="#">15 May 2022</a></li>
+                            <li><a href="#">15 May 2022</a></li>
+                        </ul>
+
+                        <ul class="details">
+                            <li class="topic">Cliente</li>
+                            <li><a href="#">Alubar</a></li>
+                            <li><a href="#">Delta</a></li>
+                            <li><a href="#">Nestlé</a></li>
+                            <li><a href="#">Nexans</a></li>
+                            <li><a href="#">Hyundai</a></li>
+                            <li><a href="#">Ford</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="button">
+                        <a href="#">See All</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Javascript-->
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+    </script>
+</body>
+
+</html>
